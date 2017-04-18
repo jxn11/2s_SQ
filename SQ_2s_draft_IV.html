@@ -1137,36 +1137,96 @@
 <div id="explainSQs">
     <h3>Speech Quilts</h3>
     <h4>Click on the buttons below to get a sense of what the speech quilts sound like</h4>
-    <ul>
-        <li>
-            <audio id="stim30" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_30ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim30') " type="button" value="30ms" />
-        </li>
-        <li>
-            <audio id="stim60" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_60ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim60') " type="button" value="60ms" />
-        </li>
-        <li>
-            <audio id="stim120" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_120ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim120') " type="button" value="120ms" />
-        </li>
-        <li>
-            <audio id="stim240" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_240ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim240') " type="button" value="240ms" />
-        </li>
-        <li>
-            <audio id="stim480" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_480ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim480') " type="button" value="480ms" />
-        </li>
-        <li>
-            <audio id="stim960" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_960ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim960') " type="button" value="960ms" />
-        </li>
-        <li>
-            <audio id="stim1920" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_1920ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
-            <input onclick="stim_play('stim1920') " type="button" value="1920ms" />
-        </li>
-    </ul>
+
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">Segment Lengths</th>
+            <th scope="col">English</th>
+            <th scope="col">Korean</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>30ms</td>
+            <td>
+                <audio id="stim30eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_30ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim30eng') " type="button" value="Eng 30ms" />
+            </td>
+            <td>
+                <audio id="stim30kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_30ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim30kor') " type="button" value="Kor 30ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>60ms</td>
+            <td>
+                <audio id="stim60eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_60ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim60eng') " type="button" value="Eng 60ms" />
+            </td>
+            <td>
+                <audio id="stim60kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_60ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim60kor') " type="button" value="Kor 60ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>120ms</td>
+            <td>
+                <audio id="stim120eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_120ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim120eng') " type="button" value="Eng 120ms" />
+            </td>
+            <td>
+                <audio id="stim120kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_120ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim120kor') " type="button" value="Kor 120ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>240ms</td>
+            <td>
+                <audio id="stim240eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_240ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim240eng') " type="button" value="Eng 240ms" />
+            </td>
+            <td>
+                <audio id="stim240kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_240ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim240kor') " type="button" value="Kor 240ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>480ms</td>
+            <td>
+                <audio id="stim480eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_480ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim480eng') " type="button" value="Eng 480ms" />
+            </td>
+            <td>
+                <audio id="stim480kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_480ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim480kor') " type="button" value="Kor 480ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>960ms</td>
+            <td>
+                <audio id="stim960eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_960ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim960eng') " type="button" value="Eng 960ms" />
+            </td>
+            <td>
+                <audio id="stim960kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_960ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim960kor') " type="button" value="Kor 960ms" />
+            </td>
+        </tr>
+        <tr>
+            <td>1920ms</td>
+            <td>
+                <audio id="stim1920eng" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Eng_1920ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim1920eng') " type="button" value="Eng 1920ms" />
+            </td>
+            <td>
+                <audio id="stim1920kor" source="" src="http://web.duke.edu/mind/overathlab/Experiments/SQ_2s/Stimuli/S2_Kor_1920ms_ex11.wav" type="audio/mpeg">Your user agent does not support the HTML5 Audio element.</audio>
+                <input onclick="stim_play('stim1920kor') " type="button" value="Kor 1920ms" />
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
     <p>
         The time durations listed on the buttons reflect the length of the speech segments which make up the corresponding speech quilt.
     </p>
