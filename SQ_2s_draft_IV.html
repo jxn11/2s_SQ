@@ -387,6 +387,10 @@
 .warning {
     font-weight: bold;
 }
+
+    .demQ {
+        background-color: #f2f2f2;
+    }
 </style>
 <div class="wrapper">
     <div class="page" id="1">
@@ -406,8 +410,8 @@
                     proceed to the main experiment.</p>
 
                 <p>The screening task is brief, and will take no more than 5 minutes to complete. You will be
-                    compensated $ 0.25 for completing this task. The main experiment will take a maximum of 60 minutes
-                    to complete, and you will receive a bonus payment of $ 1.50 for successfully completing all trials.</p>
+                    compensated $ 0.25 for completing this task. The main experiment will take about 30 minutes
+                    to complete, and you will receive a bonus payment of $ 2.50 for successfully completing all trials.</p>
 
                 <p>We do not ask for your name or any other information that might identify you. Your participation in
                     this research study is voluntary. You may withdraw at any time, but you must proceed to the final
@@ -450,7 +454,7 @@
             <div class="cell">
                 <div align="center">&nbsp;</div>
 
-                <p>1. What is your gender?</p>
+                <p class="demQ">1. What is your gender?</p>
 
                 <table border="0" cellpadding="0" cellspacing="4">
                     <tbody>
@@ -465,11 +469,11 @@
                     </tbody>
                 </table>
 
-                <p>&nbsp;2. What is your age?</p>
+                <p class="demQ">&nbsp;2. What is your age?</p>
 
                 <p><input id="Q2age" name="Q2age" size="6" type="text" /></p>
 
-                <p>3. Country?</p>
+                <p class="demQ">3. Country?</p>
 
                 <table border="0" cellpadding="0" cellspacing="4">
                     <tbody>
@@ -488,7 +492,7 @@
                     </tbody>
                 </table>
 
-                <p>4. Are you using in-ear headphones or over-the-ear headphones?</p>
+                <p class="demQ">4. Are you using in-ear headphones or over-the-ear headphones?</p>
 
                 <table border="0" cellpadding="0" cellspacing="4">
                     <tbody>
@@ -503,7 +507,7 @@
                     </tbody>
                 </table>
 
-                <p>5. Do you have any hearing loss?</p>
+                <p class="demQ">5. Do you have any hearing loss?</p>
 
                 <table border="0" cellpadding="0" cellspacing="4">
                     <tbody>
@@ -1132,13 +1136,31 @@
     #explainSQs, #practiceTrialsPage {
         display: none;
     }
+
+    #quiltTable{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #quiltTable th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    #quiltTable tr:nth-child(even){background-color: #f2f2f2}
 </style>
 
-<div id="explainSQs">
+<div id="explainSQs" class="page">
+    <div class="cell">
     <h3>Speech Quilts</h3>
+        <p>
+            This experiment uses a set of auditory stimuli that we call <b>"Speech Quilts"</b>.
+            We call these Speech Quilts because they are composed of shorter segments of speech, which have been scrambled and "stitched" together.
+            The language and how long the segments are that make up a speech quilt will vary across trials.
+        </p>
     <h4>Click on the buttons below to get a sense of what the speech quilts sound like</h4>
 
-    <table>
+    <table id = "quiltTable">
         <thead>
         <tr>
             <th scope="col">Segment Lengths</th>
@@ -1235,11 +1257,13 @@
     </p>
     <div class="warning">Press &#39;Continue&#39; to proceed.</div>
     <input onclick="startPractice();" type="button" value="Continue" />
+    </div>
 </div>
 
-<div id="practiceTrialsPage">
+<div id="practiceTrialsPage" class="page">
+    <div class="cell">
     <div id="practiceInstructions">
-        Practice Trials
+        <h3>Practice Trials</h3>
         <p>
             In each trial, you will listen to two 2-second long <b>"Speech Quilts"</b>.
             These will be just like the examples you heard on the previous page.
@@ -1248,6 +1272,14 @@
         <p>
             Your task is to judge which sound clip is composed of <b>shorter</b> segments.
             You will do this by selecting either Example 1 or Example 2 by pressing on the corresponding button.
+        </p>
+        <p>
+            You will receive feedback after each trial about whether your response was correct or incorrect.
+            There will be a total of 8 practice trials. The first four should be quite easy, while the following four
+            will be more difficult.
+        </p>
+        <p>
+            If you are ever unsure, just take your best guess and keep going.
         </p>
         <p>
             Let's give it a try!
@@ -1259,24 +1291,33 @@
             <a href="#" id="startPractice">Start Practice</a>
         </p>
     </div>
-
+    </div>
 </div>
 
 <div id="startExpPage">
     <div id="instructions">
-        You are about to begin the main experiment.
+        <h3>You are about to begin the main experiment.</h3>
         <p>
-            In each trial, you will listen to two 2-second long <b>"Speech Quilts"</b>.
-            We call these Speech Quilts because they are composed of shorter segments of speech, which have been scrambled and "stitched" together.
-            The language and how long the segments are that make up a speech quilt will vary across trials.
+            The following trials will be similar to the practice trials you've just completed.
+            The first trial will start as soon as you hit the start button below.
         </p>
         <p>
-            Your task is to judge which sound clip is composed of <b>shorter</b> segments.
-            You will do this by selecting either Example 1 or Example 2 by pressing on the corresponding button.
+            In each trial, you will be presented with two speech quilts, and your job will be to determine which one
+            was made up of shorter segments.
+            You will make your selection by pressing on the corresponding example button just as you did in the
+            practice section.
+            The experiment will then proceed on to the next trial.
+            You will not receive feedback during this section.
+        </p>
+        <p>
+            There will be a progress bar at the top of the screen so you can monitor your how long you have to go.
         </p>
         <p>
             Please know that we hope to use this data to further our understanding of how the human brain processes and understands speech, so it
-            is imperative that you stay focused and do your best with the task. Thanks, and good luck!
+            is imperative that you stay focused and do your best with the task.
+        </p>
+        <p>
+            Thanks, and good luck!
         </p>
     </div>
 
